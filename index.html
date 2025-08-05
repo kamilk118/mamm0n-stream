@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mamm0n stream</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0e0e10;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    iframe {
+      border: none;
+    }
+
+    .stream {
+      flex: 3;
+    }
+
+    .chat {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .chat {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stream">
+      <iframe
+        src="https://player.twitch.tv/?channel=mamm0n&parent=twojanazwa.github.io"
+        height="100%"
+        width="100%"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="chat">
+      <iframe
+        src="https://www.twitch.tv/embed/mamm0n/chat?parent=twojanazwa.github.io"
+        height="100%"
+        width="100%">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
